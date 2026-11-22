@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plan your next trip | Travel Buddy</title><link rel="stylesheet" href="../css/style.css"></head><body>
+<header class="site-header"><a class="brand" href="../index.html">✈ Travel Buddy</a><nav><a href="../index.html">Home</a><a href="destinations.html">Destinations</a><a href="planner.html">AI Planner</a><a href="dashboard.html">Dashboard</a></nav></header>
+<main class="page-shell"><div class="page-heading"><p class="eyebrow">TRAVEL BUDDY</p><h1>Plan your next trip</h1><p>Describe your trip in everyday language or complete the fields.</p></div>
+<form id="planner-form" class="form-card wide-form">
+<label>Describe your trip<textarea name="query" rows="3" placeholder="Plan a 3-day adventure trip to northern Pakistan under 25,000 PKR."></textarea></label>
+<div class="form-grid">
+<label>Destination<input name="destination" placeholder="Northern Pakistan"></label>
+<label>Duration (days)<input name="duration" type="number" min="1" value="3" required></label>
+<label>Budget (PKR)<input name="budget" type="number" min="0" value="25000" required></label>
+<label>Travel style<select name="style"><option>Nature</option><option>Adventure</option><option>Culture</option><option>Relaxation</option><option>Family</option></select></label>
+</div>
+<div id="destination-photos" class="photo-strip hidden"></div>
+<div id="restaurant-picker">
+<div class="picker-head"><div><h3>Choose restaurants <small>(optional)</small></h3><p class="hint">Tick the places you want in your plan. If you tick none, we pick suitable ones for your budget.</p></div>
+<select id="cuisine-filter" aria-label="Filter by cuisine"><option value="">All cuisines</option></select></div>
+<div id="restaurant-list" class="restaurant-grid"><p class="hint">Loading restaurants...</p></div>
+<p id="selected-count" class="hint"></p>
+</div>
+<button class="btn">Generate itinerary</button><p id="form-message" class="message"></p>
+</form><section id="plan-result" class="panel hidden"></section></main>
+<footer>© 2026 Travel Buddy</footer><script src="../js/api.js"></script><script src="../js/destination-images.js"></script><script src="../js/planner.js"></script></body></html>

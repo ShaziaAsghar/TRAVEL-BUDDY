@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Buddy | Discover Your Next Journey</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">✈ Travel Buddy</a>
+    <nav>
+      <a href="index.html">Home</a><a href="pages/destinations.html">Destinations</a>
+      <a href="pages/planner.html">AI Planner</a><a href="pages/login.html">Login</a>
+      <a class="btn btn-small" href="pages/register.html">Sign up</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-bg" data-search="Karakoram mountains Pakistan"></div>
+      <div class="hero-content">
+        <p class="eyebrow">YOUR PERSONAL AI TRAVEL ASSISTANT</p>
+        <h1>Plan less.<br><span>Travel more.</span></h1>
+        <p>Discover destinations and create a day-by-day trip plan around your interests, time and budget.</p>
+        <div class="hero-actions">
+          <a class="btn" href="pages/planner.html">Plan my trip</a>
+          <a class="btn btn-ghost" href="pages/destinations.html">Explore destinations</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>4+</strong><span>Destinations</span></div>
+          <div><strong>3 steps</strong><span>To a full plan</span></div>
+          <div><strong>Free</strong><span>To use</span></div>
+        </div>
+      </div>
+      <div class="hero-collage" id="hero-collage">
+        <div class="collage-tile" data-name="Hunza Valley" data-search="Hunza Valley">🏔️<span>Hunza Valley</span></div>
+        <div class="collage-tile" data-name="Skardu" data-search="Shangrila Lake Skardu">🏞️<span>Skardu</span></div>
+        <div class="collage-tile" data-name="Lahore" data-search="Badshahi Mosque Lahore">🕌<span>Lahore</span></div>
+        <div class="collage-tile" data-name="Naran" data-search="Lake Saiful Muluk Naran">🌲<span>Naran</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading"><div><p class="eyebrow">GET INSPIRED</p><h2>Popular destinations</h2></div><a href="pages/destinations.html">Explore all →</a></div>
+      <div id="featured-destinations" class="card-grid four">
+        <article class="destination-card" data-name="Hunza Valley" data-search="Karimabad Hunza Valley"><div class="destination-image hunza">🏔️</div><div class="card-body"><h3>Hunza Valley</h3><p>Mountains, culture and scenic views.</p></div></article>
+        <article class="destination-card" data-name="Skardu" data-search="Upper Kachura Lake Skardu"><div class="destination-image skardu">🏞️</div><div class="card-body"><h3>Skardu</h3><p>Lakes, valleys and adventure.</p></div></article>
+        <article class="destination-card" data-name="Naran" data-search="Naran Kaghan Valley"><div class="destination-image naran">🌲</div><div class="card-body"><h3>Naran</h3><p>Fresh air and beautiful landscapes.</p></div></article>
+        <article class="destination-card" data-name="Lahore" data-search="Lahore Fort"><div class="destination-image lahore">🕌</div><div class="card-body"><h3>Lahore</h3><p>History, food and old city charm.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="section-heading"><div><p class="eyebrow">GALLERY</p><h2>Moments from the road</h2></div></div>
+      <div class="gallery-strip" id="home-gallery">
+        <div class="gallery-tile" data-search="Attabad Lake Hunza">🌊<span>Attabad Lake</span></div>
+        <div class="gallery-tile" data-search="Deosai National Park">🦅<span>Deosai Plains</span></div>
+        <div class="gallery-tile" data-search="Lake Saiful Muluk">⛰️<span>Saif-ul-Malook</span></div>
+        <div class="gallery-tile" data-search="Passu Cones Hunza">🏔️<span>Passu Cones</span></div>
+        <div class="gallery-tile" data-search="Shalimar Gardens Lahore">🌸<span>Shalimar Gardens</span></div>
+        <div class="gallery-tile" data-search="Fairy Meadows Nanga Parbat">🌄<span>Fairy Meadows</span></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="section-heading"><div><p class="eyebrow">WHY TRAVEL BUDDY</p><h2>Everything for your trip, in one place</h2></div></div>
+      <div class="card-grid">
+        <div class="feature"><div class="icon">🗺️</div><h3>Day-by-day plans</h3><p>Tell us where, how long and your style, and get a different plan for every day.</p></div>
+        <div class="feature"><div class="icon">🍽️</div><h3>Pick your restaurants</h3><p>Choose where to eat from a list with photos, or let us pick for your budget.</p></div>
+        <div class="feature"><div class="icon">📸</div><h3>See before you go</h3><p>Search any destination and preview real photos of it.</p></div>
+      </div>
+    </section>
+
+    <section class="callout"><h2>Your next adventure starts here.</h2><p>Tell the planner what you enjoy and what you can spend.</p><a class="btn" href="pages/planner.html">Create a trip</a></section>
+  </main>
+  <footer>© 2026 Travel Buddy · AI-assisted travel planning</footer>
+  <script src="js/destination-images.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
